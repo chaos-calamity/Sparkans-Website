@@ -1,9 +1,50 @@
-* { padding: 0; margin: 0; }
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
 
 body {
     background-color: lightskyblue;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Merriweather Sans', sans-serif;
+/* style header with logo on the left and nav on the right */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+/* style nav items */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#header a:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: underline transparent;
+    transition: 0.2s;
+}
+
+#nav a:hover {
+    text-decoration: underline white;
+    transform: scale(1.1);
+    transition: 0.2s;
 }
